@@ -16,6 +16,8 @@ let observer = new MutationObserver(e => {
   .find(el => el.textContent === 'Collect Diamonds');
     if (bonus && !claiming) {
         bonus.click();
+        setTimeout(function(){
+        }, 1000);
         Array.from(document.querySelectorAll('button'))
   .find(el => el.textContent === 'Close').click();
         document.location.reload();
