@@ -17,9 +17,9 @@ let observer = new MutationObserver(e => {
     if (bonus && !claiming) {
         bonus.click();
         setTimeout(function(){
-        }, 1000);
-        Array.from(document.querySelectorAll('button'))
+                    Array.from(document.querySelectorAll('button'))
   .find(el => el.textContent === 'Close').click();
+        }, 1000);
         document.location.reload();
         let date = new Date();
         claiming = true;
